@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit common LineageOS configurations
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit common DroidX-UI configurations
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_vayu
+PRODUCT_NAME := droidx_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
@@ -32,3 +32,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT="vayu"
 
 BUILD_FINGERPRINT := POCO/vayu_id/vayu:13/TKQ1.221013.002/V14.0.3.0.TJUIDXM:user/release-keys
+
+DROIDX_BUILD_TYPE := OFFICIAL 
+DROIDX_GAPPS := true

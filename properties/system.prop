@@ -102,3 +102,4 @@ debug.sf.latch_unsignaled=1
 media.wfd.max_resolution=8
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
+ro.droidx.maintainer= vytska69
